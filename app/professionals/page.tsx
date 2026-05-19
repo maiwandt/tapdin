@@ -12,7 +12,7 @@ const BENEFITS = [
   {
     icon: "🎵",
     title: "Artists come prepared",
-    body: "Every artist submits up to 15 minutes of their music before the session. You listen on your own time. No cold pitches in the meeting.",
+    body: "Every artist submits up to 15 minutes of their music before the session. The first 15 minutes of the session you listen to their music, then you jump straight into the feedback. No time wasted.",
   },
   {
     icon: "🗓️",
