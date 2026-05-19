@@ -35,7 +35,7 @@ export default function ArtistsPage() {
     setLoading(true);
     const form = e.currentTarget;
     const data = new FormData(form);
-    await fetch("https://formspree.io/f/REPLACE_WITH_YOUR_ID", {
+    await fetch("https://formspree.io/f/xzdwdjbk", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
