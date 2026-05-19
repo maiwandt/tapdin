@@ -48,21 +48,21 @@ export default function ArtistsPage() {
     <main className="flex flex-col min-h-screen">
       {/* Nav */}
       <header className="flex items-center justify-between px-8 py-6 border-b border-white/10">
-        <Link href="/" className="text-2xl font-bold tracking-tight">
+        <Link href="/" className="text-2xl font-bold tracking-tight text-gold">
           TapdIn
         </Link>
-        <span className="text-sm text-white/40">For Artists</span>
+        <span className="text-sm text-gold-dim uppercase tracking-widest">For Artists</span>
       </header>
 
       {/* Hero */}
       <section className="px-6 py-24 text-center max-w-4xl mx-auto">
-        <p className="text-sm uppercase tracking-widest text-white/40 mb-5">
+        <p className="text-sm uppercase tracking-widest text-gold-dim mb-5">
           For Artists
         </p>
         <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
           Stop hoping to get heard.
           <br />
-          <span className="text-white/40">Start booking the meeting.</span>
+          <span className="text-gold">Start booking the meeting.</span>
         </h1>
         <p className="text-lg text-white/60 max-w-2xl mx-auto">
           TapdIn gives you direct access to the music industry professionals who
@@ -73,7 +73,7 @@ export default function ArtistsPage() {
 
       {/* How it works */}
       <section className="px-6 pb-20 max-w-4xl mx-auto w-full">
-        <h2 className="text-xs uppercase tracking-widest text-white/30 mb-10 text-center">
+        <h2 className="text-xs uppercase tracking-widest text-gold-dim mb-10 text-center">
           How it works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -96,9 +96,9 @@ export default function ArtistsPage() {
           ].map((item) => (
             <div
               key={item.step}
-              className="border border-white/10 rounded-2xl p-7"
+              className="border border-gold/20 rounded-2xl p-7 bg-gold/5"
             >
-              <p className="text-4xl font-bold text-white/10 mb-4">
+              <p className="text-4xl font-bold text-gold/30 mb-4">
                 {item.step}
               </p>
               <h3 className="font-bold text-lg mb-2">{item.title}</h3>
@@ -109,17 +109,17 @@ export default function ArtistsPage() {
       </section>
 
       {/* Benefits */}
-      <section className="bg-white/5 px-6 py-20">
+      <section className="bg-gold/5 border-y border-gold/10 px-6 py-20">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-xs uppercase tracking-widest text-white/30 mb-10 text-center">
+          <h2 className="text-xs uppercase tracking-widest text-gold-dim mb-10 text-center">
             Why TapdIn
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {BENEFITS.map((b) => (
-              <div key={b.title} className="flex gap-5 p-6 rounded-2xl border border-white/10">
+              <div key={b.title} className="flex gap-5 p-6 rounded-2xl border border-gold/15 bg-black/20">
                 <span className="text-3xl">{b.icon}</span>
                 <div>
-                  <h3 className="font-bold mb-1">{b.title}</h3>
+                  <h3 className="font-bold mb-1 text-gold-light">{b.title}</h3>
                   <p className="text-white/50 text-sm leading-relaxed">{b.body}</p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function ArtistsPage() {
 
         {submitted ? (
           <div className="text-center py-12">
-            <p className="text-2xl font-bold mb-3">You&apos;re in.</p>
+            <p className="text-2xl font-bold text-gold mb-3">You&apos;re in.</p>
             <p className="text-white/50">
               We&apos;ll reach out when early access opens.
             </p>
@@ -154,7 +154,7 @@ export default function ArtistsPage() {
                 name="name"
                 required
                 placeholder="Your name"
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/30"
+                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-gold/40"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -164,7 +164,7 @@ export default function ArtistsPage() {
                 type="email"
                 required
                 placeholder="you@example.com"
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/30"
+                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-gold/40"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -174,7 +174,7 @@ export default function ArtistsPage() {
               <input
                 name="genre"
                 placeholder="e.g. R&B, Hip-Hop, Pop..."
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/30"
+                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-gold/40"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -183,7 +183,7 @@ export default function ArtistsPage() {
               </label>
               <select
                 name="professional_type"
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-white/30"
+                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-gold/40"
               >
                 <option value="" className="bg-[#0a0a0a]">Select one</option>
                 <option value="ar" className="bg-[#0a0a0a]">A&R / Label Rep</option>
@@ -197,7 +197,7 @@ export default function ArtistsPage() {
             <button
               type="submit"
               disabled={loading}
-              className="mt-2 bg-white text-[#0a0a0a] font-bold py-4 rounded-xl hover:bg-[#f0ede8] transition-colors disabled:opacity-50"
+              className="mt-2 bg-gold text-[#0a0a0a] font-bold py-4 rounded-xl hover:bg-gold-light transition-colors disabled:opacity-50"
             >
               {loading ? "Submitting..." : "Request Early Access"}
             </button>
